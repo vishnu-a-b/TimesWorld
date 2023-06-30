@@ -1,0 +1,175 @@
+/* Nav section */
+
+.header {
+  box-sizing: border-box;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 4.5rem;
+  top: 0px;
+  background: #ffffff;
+  z-index: 3;
+  position: sticky;
+}
+
+.myNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between !important;
+  flex-wrap: nowrap;
+  padding: 0px;
+}
+
+.myNav p {
+  margin-bottom: 0px;
+}
+
+.myNav li {
+  line-height: 1.7;
+  margin-left: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #8B8B8B
+}
+
+.myNav hr {
+  opacity: 0.1;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+.nav-link {
+  color: black;
+}
+
+.navbar-collapse {
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end !important;
+}
+
+.navbar-toggler {
+  width: 35 px;
+  height: 40px;
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active  {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+  position: relative;
+}
+
+.navbar-toggler span {
+  margin: 0;
+  padding: 0;
+}
+
+.toggler-icon {
+  width: 35px;
+  height: 4px;
+  background-color: black;
+  
+}
+
+
+
+/* State when the navbar is collapsed */
+
+/* Color of 3 lines */
+
+
+
+.navbar-collapse a {
+  color: black;
+}
+
+.navbar-collapse a:hover {
+  color: #1ec7dd;
+}
+
+.navSocialIcon,
+.navSocialIcon1 {
+  font-size: 40px;
+  margin-right: 10px;
+  color: #1ec7dd;
+}
+
+.navSocialIcon:hover,
+.navSocialIcon1:hover {
+  color: #1a296b;
+}
+
+.mobNav {
+  display: none;
+}
+
+
+.Active{
+  color: #3d3d3d !important;
+  border-bottom: 1px solid black;
+}
+
+
+@media (max-width: 1420px) {
+  .nav-link {
+    font-size: 14px;
+  }
+
+  .navbar-collapse {
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .nav-link {
+    font-size: 12.5px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .desktopNav {
+    display: none;
+  }
+  
+  .mobNav {
+    top: 60px;
+    display: flex !important;
+    justify-content: space-between;
+    left: 20px;
+    position: absolute;
+    width: 400px;
+    background-color: white;
+  }
+  .mobNav {
+    display: block;
+    height: 100vh;
+  }
+  
+}
+
+@media (max-width: 576px) {
+  .mobnavSocial {
+    width: 30%;
+  }
+
+  .mobNav {
+    width: 70vw;
+    
+    overflow-y: scroll;
+  }
+
+  .header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

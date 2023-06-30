@@ -1,0 +1,163 @@
+a {
+  cursor: pointer;
+  color: #587fff !important;
+}
+
+a:hover {
+  color: #1968ff;
+}
+
+h1 {
+  color: #3d3d3d;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+h4 {
+  color: #3d3d3d;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.container {
+  padding-top: 100px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.imageLogin {
+  max-width: 600px;
+  height: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input {
+  border: 2px solid #3e3e3e;
+  padding: 10px;
+  color: #3e3e3e;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+input:hover {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.button {
+  background-color: #3c3c3c;
+  color: #fcfcfc;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  color: #3d3d3d;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.checkbox {
+  width: 32px;
+  height: 32px;
+  margin-right: 5px;
+  border: 2px solid #000;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  max-width: 500px;
+}
+
+h6 {
+
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0.39px;
+}
+
+h6:before,
+h6:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid #7b7979;
+  margin: auto 10px;
+}
+
+.Card {
+  padding: 20px;
+}
+
+.myCard {
+  height: 100%;
+  display: flex;
+  padding: 20px;
+  gap: 50px;
+  border: 2px solid #3e3e3e;
+  background: #fff;
+  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.cardImg {
+  width: 200px;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cardRegion {
+  color: #6f6f6f;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.48px;
+}
+
+.footer {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px 0px;
+}
+
+@media (max-width: 768px) {
+  .imageLogin {
+    display: none;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cardImg {
+    width: 100px;
+  }
+  .container {
+    padding-top: 20px;
+  }
+}
