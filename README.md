@@ -14,3 +14,9 @@ $ cd TimesWorld          // go to client folder
 $ npm i    // npm install packages
 
 $ npm run dev        // run it locally port:5173
+
+# Login 
+
+userName : vishnu
+
+password : 123
